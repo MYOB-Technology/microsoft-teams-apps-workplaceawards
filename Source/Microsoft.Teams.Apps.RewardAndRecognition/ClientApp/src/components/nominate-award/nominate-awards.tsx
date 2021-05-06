@@ -333,7 +333,7 @@ class NominateAwards extends React.Component<WithTranslation, IState>
                         </Flex.Item>
                     </Flex>
                     <TextArea fluid
-                        maxLength={300}
+                        maxLength={600}
                         className="reasonfornomination-text-area"
                         placeholder={t('reasonForNominationPlaceHolder')}
                         value={this.state.reasonForNomination}
