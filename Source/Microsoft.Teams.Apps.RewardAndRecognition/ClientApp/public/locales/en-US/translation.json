@@ -2,7 +2,7 @@
     "awardName": "Award name",
     "awardNamePlaceholder": "Enter name in less than 50 characters",
     "awardDescription": "Award description",
-    "awardDescriptionPlaceholder": "Describe in less than 300 characters",
+    "awardDescriptionPlaceholder": "Describe in less than 600 characters",
     "awardLink": "Award image",
     "awardLinkPlaceholder": "Enter link",
     "addButtonText": "Add",

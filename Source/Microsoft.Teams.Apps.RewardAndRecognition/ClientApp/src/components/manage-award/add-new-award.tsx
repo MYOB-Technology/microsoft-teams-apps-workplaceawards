@@ -214,7 +214,7 @@ class AddAward extends React.Component<IAwardProps, IAwardState> {
                         </Flex>
                         <div className="add-form-input">
                             <TextArea placeholder={t('awardDescriptionPlaceholder')}
-                                fluid required maxLength={300}
+                                fluid required maxLength={600}
                                 className="response-text-area"
                                 value={this.state.awardDescription}
                                 onChange={this.handleInputDescriptionChange}
