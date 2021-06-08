@@ -166,7 +166,7 @@
     <comment>Text to be shown in nominate button.</comment>
   </data>
   <data name="NominateButtonText" xml:space="preserve">
-    <value>Nominate now</value>
+    <value>Nominate now!</value>
     <comment>Text to be shown in nominate now button.</comment>
   </data>
   <data name="NominatedByText" xml:space="preserve">
