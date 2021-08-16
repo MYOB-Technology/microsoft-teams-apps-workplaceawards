@@ -145,27 +145,27 @@ namespace Microsoft.Teams.Apps.RewardAndRecognition.Helpers
                                 Spacing = AdaptiveSpacing.Default,
                             },
                         },
-                        Actions = new List<AdaptiveAction>
-                        {
-                            new AdaptiveSubmitAction
-                            {
-                                Title = localizer.GetString("EndorseButtonText"),
-                                Data = new AdaptiveCardAction
-                                {
-                                    MsteamsCardAction = new CardAction
-                                    {
-                                        Type = Constants.FetchActionType,
-                                    },
-                                    Command = Constants.EndorseAction,
-                                    NomineeUserPrincipalNames = nominatedDetail.NomineeUserPrincipalNames,
-                                    AwardName = nominatedDetail.AwardName,
-                                    AwardId = nominatedDetail.AwardId,
-                                    NomineeNames = nominatedDetail.NomineeNames,
-                                    NomineeObjectIds = nominatedDetail.NomineeObjectIds,
-                                    RewardCycleId = nominatedDetail.RewardCycleId,
-                                },
-                            },
-                        },
+                        // Actions = new List<AdaptiveAction>
+                        // {
+                        //     new AdaptiveSubmitAction
+                        //     {
+                        //         Title = localizer.GetString("EndorseButtonText"),
+                        //         Data = new AdaptiveCardAction
+                        //         {
+                        //             MsteamsCardAction = new CardAction
+                        //             {
+                        //                 Type = Constants.FetchActionType,
+                        //             },
+                        //             Command = Constants.EndorseAction,
+                        //             NomineeUserPrincipalNames = nominatedDetail.NomineeUserPrincipalNames,
+                        //             AwardName = nominatedDetail.AwardName,
+                        //             AwardId = nominatedDetail.AwardId,
+                        //             NomineeNames = nominatedDetail.NomineeNames,
+                        //             NomineeObjectIds = nominatedDetail.NomineeObjectIds,
+                        //             RewardCycleId = nominatedDetail.RewardCycleId,
+                        //         },
+                        //     },
+                        // },
                     };
 
                     ThumbnailCard previewCard = new ThumbnailCard

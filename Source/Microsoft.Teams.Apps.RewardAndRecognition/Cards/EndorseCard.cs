@@ -116,28 +116,28 @@ namespace Microsoft.Teams.Apps.RewardAndRecognition.Cards
                         Spacing = AdaptiveSpacing.Default,
                     },
                 },
-                Actions = new List<AdaptiveAction>
-                {
-                    new AdaptiveSubmitAction
-                    {
-                        Title = localizer.GetString("EndorseButtonText"),
-                        Data = new AdaptiveCardAction
-                        {
-                            MsteamsCardAction = new CardAction
-                            {
-                                Type = Constants.FetchActionType,
-                            },
-                            Command = Constants.EndorseAction,
-                            NomineeUserPrincipalNames = nominatedDetails.NomineeUserPrincipalNames,
-                            AwardName = nominatedDetails.AwardName,
-                            NomineeNames = nominatedDetails.NomineeNames,
-                            NomineeObjectIds = nominatedDetails.NomineeObjectIds,
-                            AwardId = nominatedDetails.AwardId,
-                            RewardCycleId = nominatedDetails.RewardCycleId,
-                            GroupName = string.Join(", ", JsonConvert.DeserializeObject<List<string>>(nominatedDetails.GroupName)),
-                        },
-                    },
-                },
+                // Actions = new List<AdaptiveAction>
+                // {
+                //     new AdaptiveSubmitAction
+                //     {
+                //         Title = localizer.GetString("EndorseButtonText"),
+                //         Data = new AdaptiveCardAction
+                //         {
+                //             MsteamsCardAction = new CardAction
+                //             {
+                //                 Type = Constants.FetchActionType,
+                //             },
+                //             Command = Constants.EndorseAction,
+                //             NomineeUserPrincipalNames = nominatedDetails.NomineeUserPrincipalNames,
+                //             AwardName = nominatedDetails.AwardName,
+                //             NomineeNames = nominatedDetails.NomineeNames,
+                //             NomineeObjectIds = nominatedDetails.NomineeObjectIds,
+                //             AwardId = nominatedDetails.AwardId,
+                //             RewardCycleId = ßnominatedDetails.RewardCycleId,
+                //             GroupName = string.Join(", ", JsonConvert.DeserializeObject<List<string>>(nominatedDetails.GroupName)),
+                //         },
+                //     },
+                // },
             };
 
             return new Attachment
