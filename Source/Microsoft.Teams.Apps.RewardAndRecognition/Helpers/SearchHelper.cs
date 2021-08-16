@@ -144,7 +144,7 @@ namespace Microsoft.Teams.Apps.RewardAndRecognition.Helpers
                                 HorizontalAlignment = AdaptiveHorizontalAlignment.Left,
                                 Spacing = AdaptiveSpacing.Default,
                             },
-                        },
+                        }
                         // Actions = new List<AdaptiveAction>
                         // {
                         //     new AdaptiveSubmitAction
