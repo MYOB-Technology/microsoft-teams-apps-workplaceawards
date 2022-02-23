@@ -79,12 +79,14 @@ class ConfigurationAdminPage extends React.Component<WithTranslation, IState>
 
             // Initialize application insights for logging events and errors.
             this.appInsights = getApplicationInsightsInstance(this.telemetry, browserHistory);
-            this.getMembersInTeam();
+           // let flag = validateUserPartOfTeam(this.teamId!, this.userObjectId!)
+           // if (flag) {
+                this.getMembersInTeam();
+           // }
+          //  else {
+           //     navigateToErrorPage('');
+          //  }
 
-            let member = this.state.allMembers.find(element => element.aadobjectid === this.userObjectId);
-            if (member === null || member === undefined) {
-                navigateToErrorPage(teamMembers.status);
-            }
 
         });
     }
